@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { StarIcon } from 'lucide-react'
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { ProductPrice } from '@/components/product-price'
+import { Card, CardContent, CardHeader } from '@ui/card'
+import { ProductPrice } from '@products/components/product-price'
 import type { Product } from '@/lib/types'
 
 interface ProductCardProps {
@@ -32,11 +32,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
               {product.rating} <StarIcon size={16} className='fill-yellow-400' />
             </p>
 
-            {product.stock > 0 ? (
-              <ProductPrice value={+product.price} />
-            ) : (
-              <p className='text-destructive'>OOS</p>
-            )}
+            {product.stock > 0 ? <ProductPrice value={+product.price} /> : <p className='text-destructive'>OOS</p>}
           </div>
         </div>
       </CardContent>

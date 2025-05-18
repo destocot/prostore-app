@@ -1,4 +1,4 @@
-import { ProductList } from '@/components/product-list'
+import { ProductList } from '@products/components/product-list'
 import { prisma } from '@/lib/prisma'
 import { LATEST_PRODUCTS_TAKE } from '@/lib/utils'
 import type { Product } from '@/lib/types'

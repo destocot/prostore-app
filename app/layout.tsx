@@ -9,10 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    template: '%s | Prostore',
-    default: 'Prostore',
+    template: '%s | Good Spring',
+    default: 'Good Spring',
   },
-  description: 'Prostore - a sleek and modern platform for seamless online shopping.',
+  description: 'Good Spring - a sleek and modern platform for seamless online shopping.',
 }
 
 export default function RootLayout({
@@ -23,12 +23,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>

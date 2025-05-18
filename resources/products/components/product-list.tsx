@@ -1,5 +1,5 @@
 import type { Product } from '@/lib/types'
-import { ProductCard } from '@/components/product-card'
+import { ProductCard } from '@products/components/product-card'
 
 interface ProductList {
   data: Array<Product>

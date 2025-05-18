@@ -28,7 +28,7 @@ export default async function Page({ searchParams }: PageProps) {
     <Card className='w-full max-w-sm'>
       <CardHeader className='justify-center gap-3'>
         <Link href='/' className='mx-auto'>
-          <Image src='/images/logo.svg' alt='Prostore Logo' height={45} width={45} priority />
+          <Image src='/images/logo.svg' alt='Good Spring Logo' height={45} width={45} priority />
         </Link>
 
         <CardTitle className='text-center'>Sign In</CardTitle>
